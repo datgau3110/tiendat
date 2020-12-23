@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<!-- bắt đầu form -->
+	<form>
+
+
+
+		<!-- nhãn cho phần tử html -->
+		<label>Nhập họ và tên</label>
+
+		<!-- text field -->
+		<input type="text" name="username" id="username" placeholder="Họ Tên" required="true"> <br>
+		<!-- với i love you là chữ mặt định cho chữ ở trong ô -->
+		<label>Nhập mật khẩu</label>
+		<input type="password" name="pass" placeholder="nhập mật khẩu"><br>
+		<label>Nhập Email</label>
+		<input type="email" name="email" placeholder="nhập email"><br>
+
+		<!-- Radio button - Chọn 1 trong các radio -->
+		<input type="radio" name="gioitinh" value="nam" checked="true"> <!-- với checked"true" là mặt định chọn đầu tiên -->
+		<label>nam</label>
+		<input type="radio" name="gioitinh" value="nữ">
+		<label>nữ</label>
+		<input type="radio" name="gioitinh" value="khac">
+		<label>khác</label><br>
+
+		<!-- check box - chọn nhều đối tượng -->
+		<label>sỡ thích của bạn</label>
+		<input type="checkbox" name="sothich[]" value="dabong">
+		<label>đá bóng</label>
+		<input type="checkbox" name="sothich[]" value="bongro">
+		<label>bóng rỗ</label>
+		<input type="checkbox" name="sothich[]" value="hutcan">
+		<label>hút cần</label><br>
+
+		<!-- select list - danh sách sổ xuống -->
+		<label>Trình độ học vấn:</label>
+		<select name="trinhdo" multiple="true"> 
+			<!-- với multiple"true" là chọn được 2 đối tượng -->
+			<option value="tiensi">Tiến sĩ</option>
+			<option value="thacsi">Thạc sĩ</option>
+			<option value="daihoc">Đại học</option>
+			<option value="caodang">Cao đẵng</option>
+		</select><br>
+
+		<!-- date -->
+		<label>Ngày Sinh</label>
+		<input type="date" name="ngaysinh"><br>
+
+		<!-- nhập nội dung dài -->
+		<label>nhập nội dung bài viết:</label><br>
+		<textarea name="noidung" placeholder="nhập nội dung vào đây" cols="50" rows="10"></textarea> <br>
+		<!-- với cols và rows là độ dài và độ rộng -->
+
+		<!-- các nút -->
+		<button name="toi">click vào đây</button>
+		<input type="submit" name="send" value="send to us"> <!-- với submit để lưu dữ liệu vào sever-->
+
+	</form>
+	<!-- ket thuc form -->
+
+
+</body>
+</html>
